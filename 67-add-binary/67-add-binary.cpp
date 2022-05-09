@@ -12,7 +12,7 @@ public:
             carry = sum > 1 ? 1 : 0;
             result += to_string(sum%2);
         }
-        if(carry != 0) result += to_string(carry);
+        if(carry) result += to_string(carry);
         reverse(result.begin(), result.end());
         return result;
         
