@@ -4,7 +4,7 @@ public:
         
         
     unordered_set<int> set;
-        for(int num : nums){
+        for(int &num : nums){
             if(set.find(num)!= set.end()){
                 return true;
             }
